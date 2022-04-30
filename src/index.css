@@ -61,7 +61,7 @@ body {
   cursor: pointer;
 }
 
-.puke.urgency {
+.puke.urgent {
   border-left: 5px solid green;
 }
 
