@@ -1,9 +1,9 @@
 import Puke from './Puke'
 
-const Pukes = ({ pukes }) => { 
+const Pukes = ({ pukes, onDelete }) => { 
   return (
     <>
-      {pukes.map((puke) => (<Puke key={puke.id} puke={puke} />))}
+      {pukes.map((puke) => (<Puke key={puke.id} puke={puke} onDelete={onDelete} />))}
     </>
   )
 }

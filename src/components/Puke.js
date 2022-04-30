@@ -1,7 +1,10 @@
-const Puke = ({ puke }) => {
+import { FaTimes } from 'react-icons/fa'
+
+const Puke = ({ puke, onDelete }) => {
   return (
     <div className='puke'>
-      <h3>{puke.type}</h3>
+      <h3>{puke.type} <FaTimes style={{ color: 'red', cursor: 'pointer' }} 
+      onClick={() => onDelete(puke.id)} /></h3>
       <p>{puke.details}</p>
       <p>{puke.day}</p>
     </div>

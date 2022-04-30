@@ -27,10 +27,16 @@ function App() {
     }
   ])
 
+  // Delete puke
+  const deletePuke = (id) => {
+    setPukes(pukes.filter((puke) => puke.id !== id))
+  }
+
   return (
     <div className="container">
       <Header />
-      <Pukes pukes={pukes} />
+      {pukes.length > 0 ? <Pukes pukes={pukes} onDelete={deletePuke} /> 
+      : 'No pukes logged'}
     </div>
   );
 }
