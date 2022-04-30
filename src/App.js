@@ -1,8 +1,11 @@
+import Header from './components/Header'
+import Pukes from './components/Pukes'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Cat Puke Logger</h1>
+    <div className="container">
+      <Header />
+      <Pukes />
     </div>
   );
 }
